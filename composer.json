@@ -1,0 +1,50 @@
+{
+    "name": "iag/metadata",
+    "description": "Seo metadata for Laravel websites",
+    "keywords": [
+        "seo",
+        "metadata",
+        "laravel"
+    ],
+    "homepage": "https://github.com/IAndreaGiuseppe/metadata",
+    "support": {
+        "issues": "https://github.com/IAndreaGiuseppe/metadata/issues",
+        "source": "https://github.com/IAndreaGiuseppe/metadata"
+    },
+    "authors": [
+        {
+            "name": "Andrea Giuseppe Pretto",
+            "email": "info@andreagiuseppe.com",
+            "homepage": "https://andreagiuseppe.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.8.0|^6.0",
+        "php": "~7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Iag\\Metadata\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Iag\\Metadata\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iag\\Metadata\\MetadataServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
