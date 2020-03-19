@@ -68,3 +68,79 @@ Now you're ready to include your metadata.
     ])
 @endpush
 ```
+
+## Properties
+
+Metadata package manage the following list of properties:
+
+* `robots`
+
+Defines the behaviour that cooperative crawlers, or "robots", should use with the page.
+
+Possible values: index, noindex, follow, nofollow, none, noodp, noarchive, nosnippet, noimageindex, nocache
+
+* `referrer`
+
+Controls the Referer HTTP header attached to requests sent from the document.
+
+Possible values: no-referrer, origin, no-referrer-when-downgrade, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-URL
+
+* `canonical`
+
+* `description`
+
+Contains a short and accurate summary of the content of the page.
+
+* `og:title` as `title`
+
+This metadata is used inside head section to assign a title for search engine and does not modify the main page title.
+
+* `og:url`
+
+* `og:description` as `description`
+
+* `og:type` as `type`
+
+Describe the type of the content.
+
+Possible values: website, article, music, video, book, profile
+
+* `og:locale`
+
+* `fb:app_id`
+
+Facebook App Id.
+
+* `twitter:card` as `card_type`
+
+Twitter card type.
+
+Possible values: summary, summary_large_image, app, player
+
+* `twitter:site` as `site`
+
+Twitter referred @site.
+
+* `twitter:creator` as `author`
+
+Twitter referred @username.
+
+* `og:image` as `image_url`
+
+An image URL which should represent your object within the graph.
+
+* `og:image:type` as `image_type`
+
+A MIME type for the image.
+
+* `og:image:width` as `image_width`
+
+The number of pixels wide.
+
+* `og:image:height` as `image_height`
+
+The number of pixels high.
+
+* `og:image:alt` as `image_alt`
+
+A description of what is in the image (not a caption). If the page specifies an og:image it should specify this property.
