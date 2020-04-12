@@ -10,11 +10,11 @@
 <link rel="canonical" href="{{ $canonical }}" />
 @endif
 
-@if (config('metadata.facebook.is_active'))
+@if (config('metadata.facebook.is_active') || !empty($facebook))
 @include('metadata::facebook')
 @endif
 
-@if (config('metadata.twitter.is_active'))
+@if (config('metadata.twitter.is_active') || !empty($twitter))
 @include('metadata::twitter')
 @endif
 
